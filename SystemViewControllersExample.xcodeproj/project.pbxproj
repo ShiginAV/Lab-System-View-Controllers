@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11025D1622C8D28400E143AE /* ViewController+UIImagePickerControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11025D1522C8D28400E143AE /* ViewController+UIImagePickerControllerDelegate.swift */; };
+		11025D1822C8D53C00E143AE /* ViewController+UINavigationControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11025D1722C8D53C00E143AE /* ViewController+UINavigationControllerDelegate.swift */; };
+		11025D1E22C8DFAA00E143AE /* ViewController+MFMailComposeViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11025D1D22C8DFAA00E143AE /* ViewController+MFMailComposeViewControllerDelegate.swift */; };
+		11025D2022C8F73800E143AE /* ViewController+MFMessageComposeViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11025D1F22C8F73800E143AE /* ViewController+MFMessageComposeViewControllerDelegate.swift */; };
 		110394C422C7C3CB00AB5058 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110394C322C7C3CB00AB5058 /* AppDelegate.swift */; };
 		110394C622C7C3CB00AB5058 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110394C522C7C3CB00AB5058 /* ViewController.swift */; };
 		110394C922C7C3CB00AB5058 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 110394C722C7C3CB00AB5058 /* Main.storyboard */; };
@@ -15,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		11025D1522C8D28400E143AE /* ViewController+UIImagePickerControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+UIImagePickerControllerDelegate.swift"; sourceTree = "<group>"; };
+		11025D1722C8D53C00E143AE /* ViewController+UINavigationControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+UINavigationControllerDelegate.swift"; sourceTree = "<group>"; };
+		11025D1D22C8DFAA00E143AE /* ViewController+MFMailComposeViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+MFMailComposeViewControllerDelegate.swift"; sourceTree = "<group>"; };
+		11025D1F22C8F73800E143AE /* ViewController+MFMessageComposeViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+MFMessageComposeViewControllerDelegate.swift"; sourceTree = "<group>"; };
 		110394C022C7C3CB00AB5058 /* SystemViewControllersExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SystemViewControllersExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		110394C322C7C3CB00AB5058 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		110394C522C7C3CB00AB5058 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +43,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11025D1922C8DE9300E143AE /* App */ = {
+			isa = PBXGroup;
+			children = (
+				110394C322C7C3CB00AB5058 /* AppDelegate.swift */,
+				110394CF22C7C3CC00AB5058 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		11025D1A22C8DEA800E143AE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				110394C522C7C3CB00AB5058 /* ViewController.swift */,
+				11025D1522C8D28400E143AE /* ViewController+UIImagePickerControllerDelegate.swift */,
+				11025D1722C8D53C00E143AE /* ViewController+UINavigationControllerDelegate.swift */,
+				11025D1D22C8DFAA00E143AE /* ViewController+MFMailComposeViewControllerDelegate.swift */,
+				11025D1F22C8F73800E143AE /* ViewController+MFMessageComposeViewControllerDelegate.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		11025D1B22C8DECC00E143AE /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				110394C722C7C3CB00AB5058 /* Main.storyboard */,
+				110394CC22C7C3CC00AB5058 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		11025D1C22C8DEDD00E143AE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				110394CA22C7C3CC00AB5058 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		110394B722C7C3CB00AB5058 = {
 			isa = PBXGroup;
 			children = (
@@ -54,12 +100,10 @@
 		110394C222C7C3CB00AB5058 /* SystemViewControllersExample */ = {
 			isa = PBXGroup;
 			children = (
-				110394C322C7C3CB00AB5058 /* AppDelegate.swift */,
-				110394C522C7C3CB00AB5058 /* ViewController.swift */,
-				110394C722C7C3CB00AB5058 /* Main.storyboard */,
-				110394CA22C7C3CC00AB5058 /* Assets.xcassets */,
-				110394CC22C7C3CC00AB5058 /* LaunchScreen.storyboard */,
-				110394CF22C7C3CC00AB5058 /* Info.plist */,
+				11025D1922C8DE9300E143AE /* App */,
+				11025D1A22C8DEA800E143AE /* Controllers */,
+				11025D1B22C8DECC00E143AE /* Storyboard */,
+				11025D1C22C8DEDD00E143AE /* Resources */,
 			);
 			path = SystemViewControllersExample;
 			sourceTree = "<group>";
@@ -136,6 +180,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				110394C622C7C3CB00AB5058 /* ViewController.swift in Sources */,
+				11025D1822C8D53C00E143AE /* ViewController+UINavigationControllerDelegate.swift in Sources */,
+				11025D2022C8F73800E143AE /* ViewController+MFMessageComposeViewControllerDelegate.swift in Sources */,
+				11025D1E22C8DFAA00E143AE /* ViewController+MFMailComposeViewControllerDelegate.swift in Sources */,
+				11025D1622C8D28400E143AE /* ViewController+UIImagePickerControllerDelegate.swift in Sources */,
 				110394C422C7C3CB00AB5058 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,7 +332,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FDWT9V7JHG;
-				INFOPLIST_FILE = SystemViewControllersExample/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SystemViewControllersExample/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +350,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FDWT9V7JHG;
-				INFOPLIST_FILE = SystemViewControllersExample/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SystemViewControllersExample/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
